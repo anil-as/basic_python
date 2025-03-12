@@ -146,6 +146,15 @@ Write a Python program that finds and prints the largest number from a given lis
 ### Example Output:
 `60`
 
+```python
+n=[10, 30, 25, 60, 12]
+max=n[0]
+for i in n:
+    if i>max:
+        max=i
+print(max)
+```
+
 ---
 
 ## 8. **Check Palindrome**
