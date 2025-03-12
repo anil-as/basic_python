@@ -10,6 +10,12 @@ No input required.
 `2550`
 
 ---
+```python
+sum=0
+for i in range(2,101,2):
+    sum+=i
+print("Sum of even numbers between 1 and 100 is ",sum)
+```
 
 ## 2. **Reverse a String**
 Write a Python function that takes a string as input and returns the string reversed.
