@@ -9,13 +9,13 @@ No input required.
 ### Example Output:
 `2550`
 
----
 ```python
 sum=0
 for i in range(2,101,2):
     sum+=i
 print("Sum of even numbers between 1 and 100 is ",sum)
 ```
+---
 
 ## 2. **Reverse a String**
 Write a Python function that takes a string as input and returns the string reversed.
@@ -26,6 +26,16 @@ Write a Python function that takes a string as input and returns the string reve
 ### Example Output:
 `"olleh"`
 
+```python
+word = input("Enter a string: ")
+length = len(word)
+new_word = "" 
+
+for i in range(length - 1, -1, -1): 
+    new_word += word[i] 
+
+print("Reversed string:", new_word)
+```
 ---
 
 ## 3. **Factorial of a Number**
@@ -37,6 +47,17 @@ Write a Python program that calculates the factorial of a number (n!). For examp
 ### Example Output:
 `120`
 
+```python
+def fact(n):
+    if n==1:
+        return 1
+    else:
+        return n*fact(n-1)
+
+n=int(input("Enter a number: "))
+print(f"Factorial of number {n} is {fact(n)}")
+```
+
 ---
 
 ## 4. **Check if a Number is Prime**
@@ -47,6 +68,23 @@ Write a Python function that checks if a given number is prime.
 
 ### Example Output:
 `True`
+
+```python
+import math
+
+def prime(n):
+    if n < 2: 
+        return False
+
+    for i in range(2, int(math.sqrt(n)) + 1):  
+        if n % i == 0:
+            return False
+    
+    return True
+
+n = int(input("Enter a number: "))
+print(prime(n))
+```
 
 ---
 
@@ -69,6 +107,20 @@ Write a Python program that prints the Fibonacci series up to the nth number, wh
 
 ### Example Output:
 `0 1 1 2 3`
+
+```python
+def fib(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
+
+n = int(input("Enter number: "))
+for i in range(n):  
+    print(fib(i), end=' ')
+```
 
 ---
 
