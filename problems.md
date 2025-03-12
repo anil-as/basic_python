@@ -166,6 +166,18 @@ Write a Python function that checks whether a given string is a palindrome (read
 ### Example Output:
 `True`
 
+```python
+word = input("Enter a string: ")  
+length = len(word)
+new_word = ""  
+
+for i in range(length - 1, -1, -1):  
+    new_word += word[i]  
+if word == new_word:
+    print(True) 
+else:
+    print(False)
+```
 ---
 
 ## 9. **Multiplication Table**
