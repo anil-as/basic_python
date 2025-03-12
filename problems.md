@@ -97,6 +97,19 @@ Write a Python program that counts the number of vowels (a, e, i, o, u) in a giv
 ### Example Output:
 `3`
 
+```python
+string = input("Enter a string: ")  
+temp = string.lower() 
+count = 0  
+
+while temp:    
+    if temp[-1] in ['a', 'e', 'i', 'o', 'u']:  
+        count += 1  
+    temp = temp[:-1] 
+
+print(count)  
+```
+
 ---
 
 ## 6. **Fibonacci Series**
