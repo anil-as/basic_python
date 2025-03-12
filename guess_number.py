@@ -21,6 +21,22 @@
   End
 
 """
-import random   # Python module named random
+import random
 
-random_number = random.randint(1,20) # Generate a random number between 1 and 20
+random_num=random.randint(1,20)
+count=1
+while count <= 5:
+    num=int(input("Guess number between 1 and 20: "))
+    if num >= 1 and num <=20:
+        if num < random_num:
+            print("TOO LOW")
+        elif num > random_num:
+            print("TOO HIGH")
+        else:
+            print(num,"YOU GUESSED RIGHT!")
+            break
+    else:
+        print("Input number within range")
+    count+=1
+if count > 5:
+    print("GAME OVER")

@@ -20,12 +20,14 @@ Example
   Output: 2
 
 """
-
-def digital_root(n):
-    while n >= 10:
-        n = sum(int(digit) for digit in str(n))
-    return n
-
+def digit_sum(num):
+    total = 0
+    while num > 0:
+        digit = num % 10
+        total += digit
+        num //= 10
+    return total
 num = int(input("Enter a number: "))
-result = digital_root(num)
-print("Output:", result)
+while num >= 10:
+    num = digit_sum(num)
+print("Output:", num)
