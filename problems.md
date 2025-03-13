@@ -200,6 +200,11 @@ Write a Python program that generates the multiplication table of a number up to
     4 * 10 = 40
   ```
 
+```python
+n=int(input("Enter a number : "))
+for i in range(1,10):
+    print(f"{n} * {i} = ",(n*i))
+```
 
 ---
 
