@@ -217,6 +217,8 @@ Write a Python function that counts the number of digits in a given number.
 ### Example Output:
 `5`
 
+
+
 ---
 
 ## 11. **Sum of Digits**
@@ -227,6 +229,11 @@ Write a Python program that calculates the sum of the digits in a number.
 
 ### Example Output:
 `10`
+
+```python
+n = int(input("Enter a number: "))  
+print("Sum of digits:", sum(map(int, str(n))))
+```
 
 ---
 
