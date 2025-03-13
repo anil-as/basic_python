@@ -248,6 +248,16 @@ Write a Python function that finds the second-largest number in a list of number
 ### Example Output:
 `45`
 
+```python
+arr = [2, 5, 7, 10, 33]
+n = len(arr)
+
+for i in range(n):
+    for j in range(n - i - 1):
+        if arr[j] < arr[j + 1]:
+            arr[j], arr[j + 1] = arr[j + 1], arr[j]
+```
+
 ---
 
 ## 13. **Convert Celsius to Fahrenheit**
