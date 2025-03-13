@@ -216,8 +216,10 @@ Write a Python function that counts the number of digits in a given number.
 
 ### Example Output:
 `5`
-
-
+```python
+n = int(input("Enter a number: "))  
+print("Number of digits:", len(str(n)))  
+```
 
 ---
 
